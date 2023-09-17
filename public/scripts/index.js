@@ -1,3 +1,6 @@
+const express = require('express');
+const router = express.Router();
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -181,3 +184,4 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+module.exports = router;
